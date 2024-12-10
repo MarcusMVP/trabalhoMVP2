@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta nome="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contato</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/a703ddd776.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Video de fundo-->
+    <video muted autoplay loop id="video-bg">
+        <source src="arcade.mp4" type="video/mp4">
+    </video>
+
+
+    <div class="background-overlay"></div>
+    <!--FIM-->
+
+    <form action="https://formsubmit.co/seu_email@gmail.com"  method="POST"   class="form">   
+
+        <h1>Login</h1>
+
+      <!--Associa à entrada - vincula o rótulo ao campo de entrada com o ID "nome" usando o for atributo.-->
+      <label for="name">Digite seu Nome Completo</label>
+      <!--Cria um campo de entrada de texto: permite que o usuário insira seu nome.-->
+      <input type="text" name="name" id="name"  placeholder="Nome" required />
+      <!--Associar à entrada: vincula o rótulo ao campo de entrada com o ID "email" usando o for atributo.-->
+      <label for="email">Informe seu E-mail </label>
+      <!--Cria um campo de entrada de e-mail: permite que o usuário insira seu endereço de e-mail.-->
+      <input type="email" name="email" id="email"  placeholder="E-mail"  required /><!--required-Torna o campo obrigatório, impedindo o envio do formulário sem entrada.-->
+      
+
+      <!--<input type="hidden" name="_captcha"  value="false" />-->
+      <!--Entrada oculta para redirecionamento: especifica a URL para a qual o usuário será redirecionado após o envio bem-sucedido do formulário.-->
+      <input type="hidden" name="_next"     value="http://127.0.0.1:5500/contato/obrigado.html" /> 
+      <!--Entrada oculta para resposta automática: armazena uma mensagem de resposta automática a ser enviada ao usuário após o envio do formulário.-->
+      <input type="hidden" name="_autoresponse" value="Recebemos sua mensagem, obrigado pelo contato e logo retornaremos !" />
+      <!--Cria um botão de envio: aciona o processo de envio do formulário quando clicado.-->
+      <button type="submit">Enviar</button>
+
+      
+    </form>
+  </body>
+</html>
